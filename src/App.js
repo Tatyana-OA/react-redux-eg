@@ -16,6 +16,9 @@ function App() {
 		<button onClick = {() => dispatch(increment())}>INCREMENT + </button>
 		</div>
 		<div>
+		<button onClick = {() => dispatch(increment(3))}>INCREMENT by 3 </button>
+		</div>
+		<div>
 		<button onClick = {() => dispatch(decrement())} >DECREMENT - </button>
 		</div>
 		<div>Authentication status: {isLogged ? 'Logged in' : 'Not logged in'}</div>
