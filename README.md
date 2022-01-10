@@ -25,6 +25,10 @@ Trigger. Action is dispatched to the reducer, reducer determines how to affect t
 
 store.subscribe(() => console.log(store.getState()));
 
+### `Payload`
+
+Payload is what is keyed ( the key value pairs ) in your actions and passed around between reducers in your redux application. For example -,This is a generally accepted convention to have a type and a payload for an action.
+
 ## Available Scripts
 
 In the project directory, you can run:
