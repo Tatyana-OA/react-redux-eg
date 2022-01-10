@@ -2,6 +2,29 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## REDUX definitions
+
+### `STORE`
+
+A globalized state, holding the data used throughout the whole application. Created via createStore (imported from redux)
+
+### `ACTION`
+
+Describes what we want to do with regard to the state; A function which returns an object. Usually the object has a "type" denoting the name of the action.
+
+### `REDUCER`
+
+Describes how the actions transform the state into the next state; Modifies store based on the chosen action. Takes in the initial state and "action" as parameters.
+
+### `Dispatch`
+
+Trigger. Action is dispatched to the reducer, reducer determines how to affect the state and then acts on it based on the action.
+
+### `Displaying store in Console`
+
+store.subscribe(() => console.log(store.getState()));
+
 ## Available Scripts
 
 In the project directory, you can run:
